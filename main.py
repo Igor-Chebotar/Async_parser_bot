@@ -10,7 +10,8 @@ dp = Dispatcher(bot)
 
 @dp.message_handler(commands=['start'])
 async def send_welcome(msg: types.Message):
-    await msg.answer('Привет')
+    await msg.answer('Здравствуйте, введите название города и я выведу его население и ссылку на старницу в википедии\n'
+                     'Для более подробной информации воспользуйтесть командой /help')
 
 
 @dp.message_handler(commands=['start'])

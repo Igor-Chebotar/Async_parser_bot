@@ -6,6 +6,7 @@ from sqlite3 import Error
 
 DATABASE_PATH = 'bot_base.db'
 
+
 def create_connection(path):
     connection = None
     try:
